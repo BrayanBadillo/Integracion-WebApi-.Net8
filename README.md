@@ -6,4 +6,4 @@ dotnet build
 
 #### Ejercutar la aplicacion
 
-dotnet watch run
+dotnet watch run o dotnet run
