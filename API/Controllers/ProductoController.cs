@@ -14,7 +14,7 @@ namespace API.Controllers
     public class ProductoController : ControllerBase
     {
         [HttpGet]
-        public ActionResult<List<ProductoDto>> Get()
+        public ActionResult<List<ProductoDto>> GetListProductos()
         {
             return ProductoData.GetProductos
             .Select(p => new ProductoDto
