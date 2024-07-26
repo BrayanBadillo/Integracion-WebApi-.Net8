@@ -11,14 +11,13 @@ namespace API.Controllers
 {
     [ApiController]
     [Route("api/[controller]")]
-    public class CategoriaController(ApplicationDbContext dbContext) : ControllerBase
+    public class MarcaController(ApplicationDbContext dbContext) : ControllerBase
     {
-
         [HttpGet]
-        public async Task<ActionResult<List<Categoria>>> GetCategorias()
+        public async Task<ActionResult<List<Marca>>> GetMarcas()
         {
-            var listCategorias = await dbContext.Categorias.ToListAsync();
-            return Ok(listCategorias);
+            var listMarcas = await dbContext.Marcas.ToListAsync();
+            return Ok(listMarcas);
         }
     }
 }
